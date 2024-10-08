@@ -134,9 +134,7 @@
           <tr>
             <td width="1200" valign="middle">
               <p align=center style="color:blue;">
-                <name>Feature Weakening, Contextualization, and Discrimination for Weakly Supervised Temporal Action Localization</name>
-		<p align=center style="color:blue;">
-		<name>IEEE Transaction on Multimedia (IEEE-TMM) 2023</name>
+                <name>AugRAC: Data Augmentation for Weakly Supervised Repetitive Action Counting</name>
 		<p style="font-size:25px;">Md Moniruzzaman and Zhaozheng Yin</p>
             </td>
               </tr>
@@ -149,13 +147,26 @@
           <heading><b>&nbsp&nbsp&nbsp Abstract: </b></heading><br>
           <tr>
             <td width="1200" valign="middle">
- 		<p align="left" style="font-size:18px;">Weakly-supervised Temporal Action Localization (W-TAL) aims to train a model to localize all action instances potentially from different classes in an untrimmed video, using a training dataset that has video-level action class labels but has no detailed annotations on the start and 
-end timestamps of action instances. We propose to solve the W-TAL problem from the feature learning aspect, with a new architecture, termed F3-Net, which includes (1) a Feature Weakening (FW) module that can identify and randomly weaken either the most discriminative
-action or the most discriminative background features over the training iterations to force the network to precisely localize the action instances in both discriminative and ambiguous action-related
-frames, without spreading to the background intervals; (2) a Feature Contextualization (FC) module that can infer the global contexts among video segments and attentionally fuse them
-with the local contexts from individual video segments to generate more representative features; and (3) a Feature Discrimination (FD) module that can highlight the most discriminative video segments/classes corresponding to each class/segment, respectively, for localizing multiple action instances from different
-classes within a video. Experimental results on THUMOS14 and ActivityNet1.3 demonstrate the state-of-the-art performance of our F3-Net, and the FW and FC are also effective plug-in modules
-to improve other methods.</p>
+ 		<p align="left" style="font-size:18px;">In this paper, we introduce a novel weakly supervised
+repetitive action counting network by proposing various
+data augmentations, named AugRAC, for counting repetitive
+actions from long untrimmed videos, where action interruptions
+are frequent. Unlike conventional approaches that rely on precise
+temporal annotations of all action cycles, our approach involves
+training the network with a dataset that provides only total
+action counts as ground truth. To address the inherent challenges
+in repetitive action counting tasks, such as variations
+in action speed, variations in individuals’ movement patterns,
+occlusion, and distinguishing between periodic and non-periodic
+representations, we propose a diverse range of augmentations
+into the AugRAC framework, including temporal interpolation,
+time warping, occlusion, and in-order and random shuffling.
+To evaluate the effectiveness of our AugRAC, we perform
+extensive experiments on two benchmark datasets, RepCount-A
+and UCFRep. The experiments show that our weakly supervised
+AugRAC significantly outperforms all the latest fully supervised
+methods on both datasets with large margins, even without using
+precise temporal annotations.</p>
             </td>
               </tr>
         </table>
